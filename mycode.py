@@ -1,6 +1,8 @@
 import turtle as trtl
 paint = trtl.Turtle()
 
+paint.speed(0)
+
 #-----variables-----#
 f = paint.forward
 r = paint.right
@@ -50,11 +52,28 @@ f(600)
 paint.pendown()
 paint.pencolor("Gold")
 paint.circle(90)
-#-----grassFinalizer-----#
+l(90)
+f(90)
+paint.pensize(200)
+f(1)
 r(180)
 paint.penup()
-f(610)
+f(91)
+r(90)
+f(700)
+#-----wait(for debuging)-----#
+import time
+print("initial print")
+time.sleep(0)
+print("second print")
+
+
+paint.pendown()
+#-----grassFinalizer-----#
 l(90)
+paint.penup()
+f(710)
+l(180)
 paint.pendown()
 paint.pencolor("green")
 f(800)
@@ -63,3 +82,4 @@ f(900)
 #-----end-----#
 wn = trtl.Screen()
 wn.mainloop()
+
